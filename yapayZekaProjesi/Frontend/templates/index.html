@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>RESPONSIVE PERSONAL PORTFOLIO</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <!--body-->
+    <header class="header">
+        <a href="#" class="logo">MelekCodes 🚀</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Anasayfa</a>
+            <a href="#about">Proje Hakkında</a>
+            <a href="#services">Kullanılan Teknolojiler</a>
+            <a href="#portfolio">Film Temaları</a>
+            <a href="#contact">Nasıl Kullanılır</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Merhaba!</h3>
+            <h1>Yapay Zeka ile Film Tema Analizine Hoşgeldin</h1>
+            <h3>🎉 <span class="multiple-text"></span></h3>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="{{ url_for('static', filename='x.png') }}" alt="">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="{{ url_for('static', filename='a.jpg') }}" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">Proje <span>Hakkında</span></h2>
+            <h3>Filmlerin duygusal ve tematik DNA'sını çözümlemek! 🎬🔍</h3>
+            <p>Bu proje, film altyazılarını analiz ederek içerdikleri temaları otomatik olarak belirlemek için geliştirildi. Bir filmin altyazı dosyasını yüklediğinizde, sistem aksiyon, dram, romantik, bilim kurgu gibi temaların filminizdeki dağılımını yüzdelik olarak gösterir.
+
+Amacımız, filmlerin tematik yapısını veriye dayalı şekilde ortaya çıkarmak ve izleyicilere içerikler hakkında yeni bir bakış açısı sunmak. 🎥</p>
+            <a href="#" class="btn">Keyifli keşifler! 🚀</a>
+        </div>
+    </section>
+<section class="services" id="services">
+    <h2 class="heading">Kullanılan <span>Teknolojiler</span></h2>
+
+    <div class="services-container">
+        <div class="services-box">
+            <i class='bx bx-brain'></i>
+            <h3>Yapay Zeka</h3>
+            <p>Film temalarını analiz etmek için yapay zeka modelleri kullanıyorum.
+            Makine öğrenimi algoritmalarıyla metinlerdeki tematik örüntüleri tespit ediyoruz.</p>
+            <a href="#" class="btn">Daha Fazla</a>
+        </div>
+
+        <div class="services-box">
+            <i class='bx bx-text'></i>
+            <h3>Doğal Dil İşleme</h3>
+            <p>Altyazı metinlerini anlamak ve işlemek için NLP teknikleri kullanıyorum.
+            Metin temizleme, tokenizasyon ve özellik çıkarımıyla veriyi analize hazırlıyorum.</p>
+            <a href="#" class="btn">Daha Fazla</a>
+        </div>
+
+        <div class="services-box">
+            <i class='bx bx-line-chart'></i>
+            <h3>Lojistik Regresyon</h3>
+            <p>Film temalarını sınıflandırmak için lojistik regresyon modeli geliştirdim.
+            Bu istatistiksel yöntemle metinlerin tema dağılımlarını hesaplıyoruz.</p>
+            <a href="#" class="btn">Daha Fazla</a>
+        </div>
+    </div>
+</section>
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Film <span>Temaları</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="{{ url_for('static', filename='romantik.jpg') }}" alt="">
+                <div class="portfolio-layer">
+                    <h4>Romantik</h4>
+                    <p>Romantik film, aşk, tutku ve duygusallık odaklı konuları işleyen film türü. </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="{{ url_for('static', filename='fantastik.jpg') }}" alt="">
+                <div class="portfolio-layer">
+                    <h4>Fantastik</h4>
+                    <p>Fantastik filmler , genellikle büyü , doğaüstü olaylar, mitoloji ,
+                        folklor veya egzotik fantezi dünyaları gibi fantastik temalara sahip fantezi türüne ait filmlerdir .</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="{{ url_for('static', filename='leon.jpeg') }}" alt="">
+                <div class="portfolio-layer">
+                    <h4>Suç</h4>
+                    <p>Suç filmi , suç kurgu türüne ait bir filmdir. Bu türdeki filmler genellikle suç ve kurgunun çeşitli yönlerini içerir. Stilistik olarak, tür dram veya gangster
+                        filmi gibi birçok başka türle örtüşebilir. </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="{{ url_for('static', filename='dram.jpg') }}" alt="">
+                <div class="portfolio-layer">
+                    <h4>Dram</h4>
+                    <p>Sinema ve televizyonda dram, güldürüye göre daha ciddi bir tona
+                        sahip anlatı kategorisi veya türüdür.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="{{ url_for('static', filename='bilimkurgu.jpg') }}" alt="">
+                <div class="portfolio-layer">
+                    <h4>Bilim Kurgu</h4>
+                    <p>Bilimkurgu, yakın ya da uzak gelecek ile ilgili öykülerin bugün olası olmayan
+                        bilim ve teknoloji unsurlarını da kullanarak oluşturulmasıdır. </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="{{ url_for('static', filename='animasyon.jpg') }}" alt="">
+                <div class="portfolio-layer">
+                    <h4>Animasyon</h4>
+                    <p>Animasyon, hareketli görüntüler oluşturmak için çizim, modelleme veya bilgisayar tekniklerinin kullanıldığı
+                        bir film türüdür. Gerçek çekim yerine, kare kare oluşturulan veya dijital
+                        olarak üretilen görsellerle hikayeler anlatılır.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <a href="#" class="btn">Ve çok daha fazlası...🎭✨</a>
+        </div>
+    </section>
+<section class="contact" id="contact">
+    <h2 class="heading">Nasıl <span>Kullanılır?</span></h2>
+
+    <form onsubmit="return false;">
+        <textarea name="Your Message" cols="30" rows="9" readonly>
+
+            🔮Analiz etmek istediğiniz filmin .srt (altyazı) veya .txt (metin) uzantılı
+            dosyasını bilgisayarınıza indirin.
+            🔮Uygulama arayüzündeki "Altyazı Dosyası Yükle" butonuna tıklayın.
+            🔮Açılan pencereden indirdiğiniz dosyayı seçin.
+            🔮Dosya yüklendikten sonra "Temaları Analiz Et" butonuna tıklayın.
+            🔮Filmin tema yüzdelerini liste halinde göreceksiniz
+        </textarea>
+        <a href="http://127.0.0.1:7860/" target="_blank" class="btn">Şimdi Denemeye Başla!</a>
+    </form>
+    <span id="msg"></span>
+</section>
+
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; Melek Gezer | Tüm Hakları Saklıdır.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
